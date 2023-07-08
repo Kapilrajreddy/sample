@@ -29,19 +29,19 @@ class Login extends Component {
     }
 
     return (
-      <div className="body">
+      <div className="login-body">
         <div className="login-box" id="sectionBox">
-          <form>
-            <div>
+          <form className="login-form">
+            <div className="logo-container">
               <img src="https://www.sar-group.com/assets/frontend/images/sargroup_logo.png" alt="logo" />
             </div>
-            <h2>Please Login to Your Account</h2>
-            <div className="user-container">
-              <input type="text" className="input" placeholder="Email" />
+            <h2 className="login-caption">Please Login to Your Account</h2>
+            <div className="login-user-container">
+              <input type="text" className="login-input" placeholder="Email" />
               <p className="blur">{userBlur}</p>
             </div>
-            <div>
-              <input type="password" className="input" placeholder="Password" />
+            <div className="login-user-container">
+              <input type="password" className="login-input" placeholder="Password" />
               <p className="blur">{passwordBlur}</p>
             </div>
             <input type="submit" className="login-button" value="Login" id="loginbutton" />
